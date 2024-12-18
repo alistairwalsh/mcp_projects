@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "google-drive": {
+      "command": "node",
+      "args": ["/Users/alistair/Documents/Cline/MCP/google-drive-server/build/index.js"],
+      "env": {
+        "GOOGLE_DRIVE_REFRESH_TOKEN": "<YOUR_GOOGLE_DRIVE_REFRESH_TOKEN>"
+      }
+    },
+    "ollama": {
+      "command": "node",
+      "args": ["/Users/alistair/Documents/Cline/MCP/ollama-server/build/index.js"]
+    },
+    "web-search": {
+      "command": "node",
+      "args": ["./src/web-search-server/build/index.js"],
+      "env": {
+        "BRAVE_API_KEY": "<YOUR_BRAVE_API_KEY>"
+      }
+    }
+  }
+}
